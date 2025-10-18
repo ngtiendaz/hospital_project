@@ -36,7 +36,8 @@ public class NhapVien {
     @Column(name = "maBacSi")
     private String maBacSi;
 
-   
+    @Column(name = "maDieuDuong")
+    private String maDieuDuong;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "maBenhNhan", nullable = false)
